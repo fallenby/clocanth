@@ -1,0 +1,9 @@
+{% extends "clocanth.twig.html" %}
+
+{% block body %}
+<ul>
+    {% for user in users %}
+        <li>{{ user.id }}: {{ user.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock body %}

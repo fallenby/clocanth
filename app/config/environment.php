@@ -4,6 +4,6 @@
 
         Config::environment(
             array(
-                'base_url' => 'http://localhost/public/'
+                'base_url' => 'http://localhost/clocanth/public/'
             )
         );

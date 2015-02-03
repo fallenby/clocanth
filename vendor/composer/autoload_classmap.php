@@ -6,6 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controller\\HelloController' => $baseDir . '/app/controllers/HelloController.php',
+    'App\\ClocanthView' => $baseDir . '/app/inc/ClocanthView.php',
+    'App\\Controller\\IndexController' => $baseDir . '/app/controllers/IndexController.php',
+    'App\\Controller\\UserController' => $baseDir . '/app/controllers/UserController.php',
+    'App\\Model\\User' => $baseDir . '/app/models/User.php',
     'Katzgrau\\KLogger\\Logger' => $vendorDir . '/katzgrau/klogger/src/Logger.php',
 );

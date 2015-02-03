@@ -1,0 +1,19 @@
+{% extends "basic.twig.html" %}
+
+{% block meta %}
+    {% for item in metas %}
+        <meta name="{{ item.name }}" content="{{ item.content }}">
+    {% endfor %}
+{% endblock meta %}
+
+{% block script %}
+    {% for item in scripts %}
+        <script type="text/javascript" src="{{ item }}"></script>
+    {% endfor %}
+{% endblock script %}
+
+{% block style %}
+    {% for item in styles %}
+        <link rel="stylesheet" href="{{ item }}" type="text/css" />
+    {% endfor %}
+{% endblock style %}

@@ -1,0 +1,12 @@
+{% extends "clocanth.twig.html" %}
+
+{% block body %}
+<div>{{ name }}, you are logged in!</div>
+<div>
+    <ul>
+        {% for link in links %}
+            <li><a href={{ link.url }}>{{ link.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock body %}

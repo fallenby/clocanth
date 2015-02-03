@@ -4,9 +4,9 @@
 
         Config::database(
             array(
-                'host' => '',
-                'username' => '',
-                'password' => '',
-                'database' => ''
+                'host' => '192.168.0.103',
+                'username' => 'dev',
+                'password' => 'itcrowd',
+                'database' => 'clocanth'
             )
         );

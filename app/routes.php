@@ -3,4 +3,8 @@
 
         use Clocanth\Route;
 
-        Route::get('/', 'HelloController@hello');
+        Route::get('/', 'IndexController@index');
+
+        Route::group('users', function() {
+            Route::get('all', 'UserController@all');
+        });
